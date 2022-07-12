@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import tienda from '../assets/logoGamer.png';
+import logoTienda from '../assets/logoGamer.png';
 
 
 
@@ -15,8 +15,8 @@ function NavBar() {
       <Navbar.Brand href="#home">
       </Navbar.Brand>
       <img
-              src={tienda}
-              width="70"
+              src={logoTienda}
+              width="79"
               height="60"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
