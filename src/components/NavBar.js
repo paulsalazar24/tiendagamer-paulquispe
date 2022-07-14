@@ -1,19 +1,15 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import {Navbar, Nav, Container, NavDropdown} from 'react-bootstrap';
 import logoTienda from '../assets/logoGamer.png';
-
+// import {Outlet, Link} from 'react-router-dom';
+import { FaBeer } from 'react-icons/fa';
 
 
 function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container>
       <Navbar.Brand href="#home">
-      </Navbar.Brand>
       <img
               src={logoTienda}
               width="79"
@@ -21,12 +17,15 @@ function NavBar() {
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />
-        <Navbar.Brand href="#home">GAMER CODE</Navbar.Brand>
+      </Navbar.Brand>
+      <Navbar.Brand href="#home">GAMER CODE</Navbar.Brand>
+      <Container>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#features">Inicio</Nav.Link>
             <Nav.Link href="#pricing">Contactanos</Nav.Link>
+            <Nav.Link href="#pricing">Ubicación</Nav.Link>
             <NavDropdown title="Productos" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Mangas</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
