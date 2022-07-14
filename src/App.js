@@ -1,7 +1,8 @@
 import React from 'react'
 import './App.css';
 import {NavBar} from './components/NavBar';
-import logo from './logo.svg';
+import {Container} from './components/Conteiner';
+
 
 
 function App() {
@@ -9,13 +10,10 @@ function App() {
   return (
     <>
      <NavBar/>
-     <div className="App">
-        <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        </header>
-      </div>   
+     <Container/>
     </>
   );
+
 }
 
 export default App;
