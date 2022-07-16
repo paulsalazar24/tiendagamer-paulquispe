@@ -1,6 +1,6 @@
 import { BsCart4 } from "react-icons/bs";
 
-const style = { color: "white", fontSize: "2.0em" }
+const style = { color: "white", fontSize: "2.0em" };
 
 function CartWidget(){
         return (
