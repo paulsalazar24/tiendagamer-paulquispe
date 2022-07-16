@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav, Container, NavDropdown} from 'react-bootstrap';
 import logoTienda from '../assets/logoGamer.png';
 // import {Outlet, Link} from 'react-router-dom';
-import { FaBeer } from 'react-icons/fa';
+import {CartWidget} from './CartWidget';
 
 
 function NavBar() {
@@ -38,12 +38,7 @@ function NavBar() {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Nav>
-            <Nav.Link href="#deets">Ubicacion</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Carrito
-            </Nav.Link>
-          </Nav>
+          <CartWidget/>
         </Navbar.Collapse>
       </Container>
     </Navbar>
