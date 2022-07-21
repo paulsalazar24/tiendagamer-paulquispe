@@ -1,21 +1,14 @@
-const listaProductos = {
-    productos: 'Camara',
-    marcar: 'LG',
+import React from 'react';
+import '../App.css';
 
-}
-
-
-
-
-
-const ItemListContainer = () =>{
+function ItemListContainer({ saludo }) {
     return (
-        <div>
-            <h1>
-               Lista
-            </h1>
+        <div className='container mt-4'>
+            <p>
+                {saludo}
+            </p>
         </div>
-    )
+    );
 }
 
-export default ItemListContainer 
+export {ItemListContainer};

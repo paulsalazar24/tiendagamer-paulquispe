@@ -1,34 +1,24 @@
-import React from 'react'
+import logo from './logo.svg';
 import './App.css';
 import {NavBar} from './layouts/NavBar';
-// import {Container} from './layouts/Conteiner';
-import Contact from './components/Contact';
-import Ubicacion from './components/Ubicacion';
-import ItemListContainer from './components/ItemListContainer';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {ItemListContainer} from './components/ItemListContainer'
+import {ItemCount} from './components/ItemCount'
+
+function App(cantidad) {
+
+  const agregarCarrito = (cantidad) => {
+    console.log(`Agregaste ${cantidad} al carrito`)
+  }
 
 
 
-function App() {
-  
   return (
     <>
-    <div className='App'>
-    <BrowserRouter>
-     <Routes >
-        <Route path='/' element={<NavBar/>}>
-            <Route index element={<ItemListContainer/>}/>
-            <Route path='contact' element={<Contact/>}/>
-            <Route path='ubicacion' element={<Ubicacion/>}/> 
-        </Route>
-    </Routes>
-    </BrowserRouter>
-
-    </div>
-      
+    <NavBar/>
+    <ItemListContainer saludo="Hola este es mi lista de productos" />
+    <ItemCount stock={20} initial={1} agregarCarrito={agregarCarrito}/>
     </>
   );
-
 }
 
 export default App;
