@@ -4,9 +4,9 @@ import '../App.css';
 function ItemListContainer({ saludo }) {
     return (
         <div className='container mt-4'>
-            <p>
+            <h2>
                 {saludo}
-            </p>
+            </h2>
         </div>
     );
 }

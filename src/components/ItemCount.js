@@ -23,6 +23,7 @@ const [count, setCount] = useState(initial);
     return (
 
         <div className='carrito col-12'>
+           <p>Productos</p>
             <div className='cont-dato'>
                 <Button  className='btn-restar' onClick={restar}>-</Button>  
                 <p>{count} </p> 
