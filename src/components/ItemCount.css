@@ -1,4 +1,28 @@
-.container{
-    align-items: center;
+.carrito{
+text-align: center;
+
 }
 
+.btn-agregar{
+    color:rgba(0, 129, 84, 0.652);
+    border-color: rgba(5, 184, 121, 0.652);
+    background-color: inherit;
+}
+
+.cont-dato{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-restar{
+ margin-right: 20px;
+}
+
+.btn-sumar{
+   margin-left: 20px;
+   }
+
+
+p{
+    margin-top: 4px;
+}

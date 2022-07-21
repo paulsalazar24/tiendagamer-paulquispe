@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './ItemCount';
 import { useState } from 'react';
+import './ItemCount.css'
 
 
 const ItemCount = ({stock, initial, agregarCarrito}) =>{
@@ -21,15 +22,15 @@ const [count, setCount] = useState(initial);
 
     return (
 
-        <div className='container col-12'>
-        <div className='col-12'>
-         <Button className='mr-8' onClick={restar}>-</Button>  
-         {count}  
-        <Button className=' ml-8' onClick={aumentar}>+</Button>
-        </div>
-        <div className='carrito mt-2'>
-        <Button onClick={()=>agregarCarrito(count)}>Comprar</Button>
-        </div>
+        <div className='carrito col-12'>
+            <div className='cont-dato'>
+                <Button  className='btn-restar' onClick={restar}>-</Button>  
+                <p>{count} </p> 
+                <Button className='btn-sumar' onClick={aumentar}>+</Button>
+            </div>
+            <div className='carrito mt-2'>
+                <Button className='btn-agregar btn success' onClick={()=>agregarCarrito(count)}>Agregar al carrito</Button>
+            </div>
      </div>
         
       );
