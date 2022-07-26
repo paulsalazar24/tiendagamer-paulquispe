@@ -1,22 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import {NavBar} from './layouts/NavBar';
-import {ItemListContainer} from './components/ItemListContainer'
-import {ItemCount} from './components/ItemCount'
+import {NavBar} from './components/NavBar/NavBar';
+import {ItemListContainer} from './components/ItemListContainer/ItemListContainer'
+
 
 function App(cantidad) {
-
-  const agregarCarrito = (cantidad) => {
-    console.log(`Agregaste ${cantidad} al carrito`)
-  }
-
-
-
   return (
     <>
     <NavBar/>
-    <ItemListContainer saludo="Hola este es mi lista de productos" />
-    <ItemCount stock={20} initial={1} agregarCarrito={agregarCarrito}/>
+    <ItemListContainer saludo="LISTA DE PRODUCTOS" />
     </>
   );
 }

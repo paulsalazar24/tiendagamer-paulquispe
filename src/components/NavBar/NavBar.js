@@ -1,8 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Navbar, Nav, Container, NavDropdown} from 'react-bootstrap';
-import {CartWidget} from '../components/CartWidget';
-import logoTienda from '../assets/logoGamer.png';
+import {Navbar, Nav, Container} from 'react-bootstrap';
+import {CartWidget} from '../CartWidget/CartWidget.js';
+import logoTienda from '../../assets/logoGamer.png';
 
 
 function NavBar(){

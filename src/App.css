@@ -40,3 +40,10 @@
 .container{
   text-align: center;
 }
+
+.estilo{
+  background-color:rgb(245, 84, 84);
+  color: aliceblue;
+  border-radius: 15px;
+  margin-bottom: 8px;
+}

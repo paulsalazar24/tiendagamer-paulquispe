@@ -21,19 +21,23 @@ const [count, setCount] = useState(initial);
     };
 
     return (
-
+        <>
+    
         <div className='carrito col-12'>
-           <p>Productos</p>
-            <div className='cont-dato'>
-                <Button  className='btn-restar' onClick={restar}>-</Button>  
-                <p>{count} </p> 
-                <Button className='btn-sumar' onClick={aumentar}>+</Button>
+            <div className='marco'>
+                <div className='cont-dato'>
+                    <Button  className='btn-restar' onClick={restar}>-</Button>  
+                    <p>{count} </p> 
+                    <Button className='btn-sumar' onClick={aumentar}>+</Button>
+                </div>
+                <div className='carrito mt-2'>
+                    <Button className='btn-agregar btn success' onClick={()=>agregarCarrito(count)}>Agregar al carrito</Button>
+                </div>
             </div>
-            <div className='carrito mt-2'>
-                <Button className='btn-agregar btn success' onClick={()=>agregarCarrito(count)}>Agregar al carrito</Button>
-            </div>
-     </div>
+        </div>
         
+        
+        </>
       );
 }
 
