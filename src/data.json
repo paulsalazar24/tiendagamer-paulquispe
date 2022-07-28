@@ -3,50 +3,59 @@
         {
             "id": 1,
             "nombre": "Mesa gamer",
+            "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
             "imagen": "https://static.wixstatic.com/media/7ffdba_6711249602024d268c3bb952aceea5f2~mv2.png/v1/fill/w_411,h_411,al_c,q_85,usm_0.66_1.00_0.01/7ffdba_6711249602024d268c3bb952aceea5f2~mv2.webp"
         },
         {
             "id": 2,
             "nombre":"Teclado mecanico",
+            "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
             "imagen":"https://static.wixstatic.com/media/7ffdba_7a88252067d14232b8c44e8de7e2c844~mv2.png/v1/fill/w_411,h_411,al_c,q_85,usm_0.66_1.00_0.01/7ffdba_7a88252067d14232b8c44e8de7e2c844~mv2.webp"
 
         },
         {
             "id":3,
             "nombre":"Audífono gamer",
+            "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
             "imagen":"https://static.wixstatic.com/media/7ffdba_b817f5f3a7df4055861685c10448d205~mv2.png/v1/fill/w_411,h_411,al_c,q_85,usm_0.66_1.00_0.01/7ffdba_b817f5f3a7df4055861685c10448d205~mv2.webp"
 
         },
         {
             "id":4,
             "nombre":"Mouse Gmaer",
+            "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
             "imagen":"https://static.wixstatic.com/media/7ffdba_33a7007a92df432c8d073102e66e47ab~mv2.png/v1/fill/w_411,h_411,al_c,q_85,usm_0.66_1.00_0.01/7ffdba_33a7007a92df432c8d073102e66e47ab~mv2.webp"
 
         },
         {
             "id":5,
             "nombre":"Mando gamer",
+            "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
             "imagen":"https://static.wixstatic.com/media/7ffdba_3610e47db0a14786ba24433ba642bcf0~mv2.png/v1/fill/w_411,h_411,al_c,q_85,usm_0.66_1.00_0.01/7ffdba_3610e47db0a14786ba24433ba642bcf0~mv2.webp"
 
         },
         {
             "id":6,
             "nombre":"Mouse Logitech G502",
+            "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
             "imagen":"https://static.wixstatic.com/media/7ffdba_a46db17cc9054c61ac4d79f22edd0df6~mv2.png/v1/fill/w_500,h_375,al_c,q_90,usm_0.66_1.00_0.01/7ffdba_a46db17cc9054c61ac4d79f22edd0df6~mv2.webp"
         },
         {
             "id":7,
             "nombre":"Tajeta de Video",
+            "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
             "imagen":"https://static.wixstatic.com/media/7ffdba_9b6991f360ce43e99a500dfe0463624e~mv2.png/v1/fill/w_500,h_500,al_c,q_90,usm_0.66_1.00_0.01/7ffdba_9b6991f360ce43e99a500dfe0463624e~mv2.webp"
         },
         {
             "id":8,
             "nombre":"Audifono gamer",
+            "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
             "imagen":"https://static.wixstatic.com/media/7ffdba_71aa0a5a4aba49de91fce4b3b732d36d~mv2.png/v1/fill/w_500,h_500,al_c,q_90,usm_0.66_1.00_0.01/7ffdba_71aa0a5a4aba49de91fce4b3b732d36d~mv2.webp"
         },
         {
             "id":9,
             "nombre":"Combo Gamer",
+            "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
             "imagen":"https://static.wixstatic.com/media/7ffdba_a2413074309847a2aca89187d70f968b~mv2.png/v1/fill/w_500,h_500,al_c,q_90,usm_0.66_1.00_0.01/7ffdba_a2413074309847a2aca89187d70f968b~mv2.webp"
         }
     ]

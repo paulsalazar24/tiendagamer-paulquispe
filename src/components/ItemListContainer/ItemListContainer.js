@@ -7,12 +7,11 @@ import { ItemList } from '../ItemList/ItemList';
 const ItemListContainer = ({ saludo }) => {
 
     const[listaProductos,setListaProductos]= useState([])
-    const[mensaje,setMensaje] = useState(false)
+    // const[mensaje,setMensaje] = useState(false)
 
 
     const productos =require('../../data.json');
-    
-    //console.log(productos);
+
 
 
       const data = new Promise((resolve, reject) => {

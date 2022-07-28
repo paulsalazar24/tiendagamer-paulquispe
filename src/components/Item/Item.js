@@ -18,7 +18,7 @@ export const Item = ({producto}) => {
         </a>
         <div className="card-body">
             <h5 className="">{producto.nombre}</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>   
+            <p className="card-text">{producto.description}</p>   
         </div>
         <button className='btn btn-primary mb-2'>Ver detalle</button>
     </div>
