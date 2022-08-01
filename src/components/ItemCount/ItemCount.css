@@ -16,15 +16,21 @@ text-align: center;
 
 .btn-restar{
  margin-right: 20px;
+ color:rgba(0, 129, 84, 0.652);
+    border-color: rgba(5, 184, 121, 0.652);
+    background-color: inherit;
 }
 
 .btn-sumar{
    margin-left: 20px;
+   color:rgba(0, 129, 84, 0.652);
+    border-color: rgba(5, 184, 121, 0.652);
+    background-color: inherit;
    }
 
-
 p{
-    margin-top: 7px;
+    margin-top: 27px;
+    margin-left: 15px;
 }
 
 

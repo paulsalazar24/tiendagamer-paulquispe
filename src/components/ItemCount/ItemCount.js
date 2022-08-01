@@ -1,12 +1,12 @@
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import './ItemCount';
 import { useState } from 'react';
 import './ItemCount.css'
 
 
-const ItemCount = ({stock, initial, agregarCarrito}) =>{
+const ItemCount = ({stock, initial}) =>{
 const [count, setCount] = useState(initial);
+
     const aumentar = () =>{
         if(count < stock){
             setCount(count + initial);
@@ -31,7 +31,7 @@ const [count, setCount] = useState(initial);
                     <Button className='btn-sumar' onClick={aumentar}>+</Button>
                 </div>
                 <div className='carrito mt-2'>
-                    <Button className='btn-agregar btn success' onClick={()=>agregarCarrito(count)}>Agregar al carrito</Button>
+                    <Button className='btn-agregar btn-danger' >Agregar al carrito</Button>
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 import React, { createFactory } from 'react'
-import { Item } from '../Item/Item'
+import { Item } from '../Item/Item';
+
 
 export const ItemList = ({listaProductos,}) => {
 
@@ -9,7 +10,7 @@ export const ItemList = ({listaProductos,}) => {
     {
         listaProductos.map(producto=>
             <Item key={producto.id} producto={producto} />
-            ) 
+            )    
     }
     </div>
 
