@@ -5,12 +5,12 @@ export const ItemDatail = ({producto}) => {
  
     return (
         <>
-            <div class="tarjeta">
-            <div class="contenido">
-                <div class="ladoIzq">
-                    <h2 class="titulo text-center">{producto.nombre}</h2>
+            <div className="tarjeta">
+            <div className="contenido">
+                <div className="ladoIzq">
+                    <h2 className="titulo text-center">{producto.nombre}</h2>
                     <hr></hr>
-                    <div class="cuerpo">
+                    <div className="cuerpo">
                     <p>{producto.description}</p>
                     <ul>
                         <li>Cantidad disponible: {producto.stock}</li>
@@ -20,8 +20,8 @@ export const ItemDatail = ({producto}) => {
                 <hr></hr>
                 <ItemCount initial={1} stock={producto.stock}  />
             </div>
-                    <div class="ladoDer">
-                    <img src={producto.imagen} />
+                    <div className="ladoDer">
+                    <img className="img_detalle" src={producto.imagen} />
                     
                     </div>
                 </div>

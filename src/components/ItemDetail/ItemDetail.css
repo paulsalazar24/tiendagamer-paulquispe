@@ -48,6 +48,6 @@ a.btn:first-of-type {
 a.btn:hover{
    opacity: 0.8;
 }
-img{
+.img_detalle{
     margin-left: 108px;
 }

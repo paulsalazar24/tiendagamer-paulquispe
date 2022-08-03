@@ -1,3 +1,28 @@
+# TIENDA CODE
+###Poyecto de una tienda de componentes de computadora
+
+### Contamos con tres categorias 
+
+#Teclados   
+#audifonos   
+#componentes
+
+
+## - Para correr el proyecto:
+###### npm run start
+
+## - Para correr las apis
+###### npm run startApi
+###### http://localhost:4001/productos
+##### http://localhost:4001/productos?id=${id}
+##### http://localhost:4001/categorias
+##### http://localhost:4001/productos?categoria_id=${id}
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
