@@ -10,7 +10,7 @@ function App(cantidad) {
     <>
     <NavBar/>
     {/* <ItemListContainer saludo="LISTA DE PRODUCTOS" /> */}
-    <ItemDetailContainer />
+    <ItemDetailContainer inicio="Detalle de producto"/>
     </>
   );
 }

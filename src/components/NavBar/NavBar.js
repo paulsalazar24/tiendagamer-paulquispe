@@ -9,22 +9,24 @@ function NavBar(){
     return(
         <>
         <Navbar bg="dark" variant="dark">
-            
-            <Container>
+
             <Navbar.Brand href="#home">
                 <img
-                        src={logoTienda}
-                        width="79"
-                        height="60"
-                        className="d-inline-block align-top"
-                        alt="React Bootstrap logo"
-                        />
+                    src={logoTienda}
+                    width="79"
+                    height="60"
+                    className="d-inline-block align-top"
+                    alt="React Bootstrap logo"
+                />
             </Navbar.Brand>
             <Navbar.Brand href="#home">Tienda Code</Navbar.Brand>
+            <Container>
+
             <Nav className="me-auto">
                 <Nav.Link href="#home">Inicio</Nav.Link>
-                <Nav.Link href="#features">Productos</Nav.Link>
-                <Nav.Link href="#pricing">Promociones</Nav.Link>
+                <Nav.Link href="#features">Teclados</Nav.Link>
+                <Nav.Link href="#pricing">Audifonos</Nav.Link>
+                <Nav.Link href="#features">Componentes</Nav.Link>
             </Nav>
             <CartWidget/>
             </Container>

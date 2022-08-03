@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { getDetalleProducto } from '../../utils/api'
 import { ItemDatail } from '../ItemDetail/ItemDetail'
 
-export const ItemDetailContainer = () => {
+export const ItemDetailContainer = ({inicio}) => {
 
     const [producto, setProducto] = useState({})
 
@@ -17,7 +17,7 @@ export const ItemDetailContainer = () => {
   return (
     <>
     <div className='align-center'>
-
+    <h2 className="text-bg-info text-center"> {inicio}</h2>
     </div>
         <ItemDatail producto={producto} />
     </>

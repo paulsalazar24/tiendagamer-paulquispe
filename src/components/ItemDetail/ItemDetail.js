@@ -18,7 +18,7 @@ export const ItemDatail = ({producto}) => {
                     </ul>
                 </div>
                 <hr></hr>
-                <ItemCount initial={1} stock={10}  />
+                <ItemCount initial={1} stock={producto.stock}  />
             </div>
                     <div class="ladoDer">
                     <img src={producto.imagen} />
