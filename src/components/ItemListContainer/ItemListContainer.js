@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../../App.css';
 import { ItemList } from '../ItemList/ItemList';
-import {getDetalleProducto, getProductoCategoria, getProductos} from '../../utils/api';
+import {getProductoCategoria, getProductos} from '../../utils/api';
 import {useParams} from "react-router-dom";
 
 
@@ -33,7 +33,7 @@ const ItemListContainer = ({ saludo }) => {
 
     return (
         <>
-            <div className='container mt-4'>
+            <div className='container mt-4 ml-2'>
                 <h2 className='estilo'>{saludo}</h2>
 
                 <ItemList listaProductos={listaProductos}/>

@@ -1,3 +1,8 @@
+![Alt Text](https://gfycat.com/infiniteuniformblowfish)
+
+
+
+
 # TIENDA CODE
 ###Poyecto de una tienda de componentes de computadora
 
