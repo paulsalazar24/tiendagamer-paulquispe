@@ -1,7 +1,7 @@
 import { ItemCount } from "../ItemCount/ItemCount";
 import '../ItemDetail/ItemDetail.css'
 
-export const ItemDatail = ({producto}) => {
+export const ItemDetail = ({producto}) => {
  
     return (
         <>

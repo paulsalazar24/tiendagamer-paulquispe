@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getDetalleProducto } from '../../utils/api'
 import { useParams } from 'react-router-dom';
-import { ItemDatail } from '../ItemDetail/ItemDetail'
+import { ItemDetail } from '../ItemDetail/ItemDetail'
 
 export const ItemDetailContainer = ({inicio}) => {
 
@@ -22,7 +22,7 @@ export const ItemDetailContainer = ({inicio}) => {
         <div className='align-center'>
         <h2 className="text-bg-info text-center"> {inicio}</h2>
         </div>
-            <ItemDatail producto={producto} />
+            <ItemDetail producto={producto} />
     </>
   )
 }
