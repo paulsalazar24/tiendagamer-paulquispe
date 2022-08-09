@@ -1,7 +1,22 @@
 import { ItemCount } from "../ItemCount/ItemCount";
-import '../ItemDetail/ItemDetail.css'
+import { useState } from 'react';
+import '../ItemDetail/ItemDetail.css';
+import { useNavigate } from "react-router-dom";
+
+
 
 export const ItemDetail = ({producto}) => {
+
+    const navigate = useNavigate()
+
+    const [count, setCount] = useState(0);
+
+    const [compra,setCompra]= useState(false);
+
+    const onAdd = () => {
+        setCompra(true)
+        console.log("agregando al carrito ")
+    }
  
     return (
         <>
@@ -18,7 +33,10 @@ export const ItemDetail = ({producto}) => {
                     </ul>
                 </div>
                 <hr></hr>
-                <ItemCount initial={1} stock={producto.stock}  />
+                    {
+                         compra ? <button className="btn btn-danger text-dark" onClick={()=> navigate("/carrito")} >Ir al carrito</button> :  <ItemCount initial={1} stock={producto.stock} count={count} setCount={setCount} onAdd={onAdd}/>
+
+                     }
             </div>
                     <div className="ladoDer">
                     <img className="img_detalle" src={producto.imagen} />
