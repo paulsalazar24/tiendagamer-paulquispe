@@ -1,5 +1,5 @@
 import {BsCart4} from "react-icons/bs";
-import {useContext} from "react";
+import React, {useContext} from "react";
 import {CartContext} from "../../context/CartContext";
 import {Link} from "react-router-dom";
 
@@ -12,9 +12,14 @@ function CartWidget() {
 
     return (
         <>
-            <Link to="/carrito">
-                <BsCart4 style={StyledIcon}/> {cantidadTotalDeProductosCarrito()}
-            </Link>
+            {
+                cantidadTotalDeProductosCarrito() > 0 ? (
+                    <Link to="/carrito">
+                        <BsCart4 style={StyledIcon}/> {cantidadTotalDeProductosCarrito()}
+                    </Link>
+                ): ""
+            }
+
         </>
     );
 }

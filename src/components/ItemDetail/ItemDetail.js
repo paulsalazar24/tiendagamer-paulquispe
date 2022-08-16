@@ -47,7 +47,7 @@ export const ItemDetail = ({producto}) => {
                 </div>
                 <hr></hr>
                     {
-                         compra ? <button className="btn btn-danger text-dark" onClick={()=> navigate("/carrito")} >Ir al carrito</button> :  <ItemCount initial={1} stock={producto.stock} count={count} setCount={setCount} onAdd={onAdd}/>
+                         compra ? <button className="btn btn-danger text-dark" onClick={()=> navigate("/carrito")} >Terminar compra</button> :  <ItemCount initial={1} stock={producto.stock} count={count} setCount={setCount} onAdd={onAdd}/>
 
                      }
             </div>
