@@ -1,33 +1,47 @@
 import React, { useEffect, useState } from 'react';
 import '../../App.css';
 import { ItemList } from '../ItemList/ItemList';
-import {getProductoCategoria, getProductos} from '../../utils/api';
+// import {getProductoCategoria, getProductos} from '../../utils/api';
 import {useParams} from "react-router-dom";
-
+import {db} from "../../firebase/firebase";
+import { query, where, collection, getDocs } from "firebase/firestore"
 
 const ItemListContainer = ({ saludo }) => {
 
 
     const { id } = useParams()
-
-    console.log(id)
-
-    
     const[listaProductos,setListaProductos]= useState([])
 
-      useEffect(()=>{
-          if(id == null){
+    console.log({id})
 
-              getProductos().then(resp => {
-                  setListaProductos(resp)
-              }).catch(error => console.error(error))
+    useEffect(() => {
 
-          }else{
-              getProductoCategoria(id).then(resp => {
-                  setListaProductos(resp)
-              }).catch(error => console.error(error))
-          }
-      },[id])
+        const q = id
+            ? query(collection(db, 'productos'), where("categoria_id", "==", id))
+            : collection(db, 'productos')
+
+        getDocs(q)
+            .then(result => {
+                console.log({result})
+                const listaProducto = result.docs.map((product) => {
+                    return {
+                        id: product.id,
+                        ...product.data()
+                    }
+                })
+                console.log({listaProducto})
+                setListaProductos(listaProducto)
+            })
+            .catch((error) => console.log(error))
+    }, [id]);
+
+    console.log({listaProductos})
+
+
+
+
+
+
 
     console.log({listaProductos})
 

@@ -5,16 +5,29 @@ import {CartWidget} from '../CartWidget/CartWidget.js';
 import logoTienda from '../../assets/logoGamer.png';
 import {getCategoria} from "../../utils/api";
 import {Link} from "react-router-dom";
-
+import {db} from "../../firebase/firebase";
+import {  collection, getDocs } from "firebase/firestore"
 
 function NavBar(){
 
     const [categorias, setCategorias] = useState([]);
 
     useEffect(() => {
-        getCategoria().then(resp=>{
-            setCategorias(resp)
-        })
+        const q = collection(db, 'categorias')
+        getDocs(q)
+            .then(result => {
+                console.log({result})
+                const lista = result.docs.map((categoria) => {
+                    return {
+                        id: categoria.id,
+                        ...categoria.data()
+                    }
+                })
+                console.log({lista})
+                setCategorias(lista)
+            })
+            .catch((error) => console.log(error))
+
     }, []);
 
 

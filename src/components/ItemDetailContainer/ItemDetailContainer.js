@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { getDetalleProducto } from '../../utils/api'
 import { useParams } from 'react-router-dom';
 import { ItemDetail } from '../ItemDetail/ItemDetail'
+import {db} from "../../firebase/firebase";
+import {collection, doc, getDoc} from "firebase/firestore";
 
 export const ItemDetailContainer = ({inicio}) => {
 
@@ -10,10 +12,20 @@ export const ItemDetailContainer = ({inicio}) => {
     const { id } = useParams()
 
     useEffect(() => {
-        getDetalleProducto(id).then(resp => {
-            setProducto(resp.filter((producto) => producto.id === parseInt(id))[0])
-        })
-        .catch(error => console.error(error))
+
+        const collecionProductos = collection(db, 'productos')
+        const referenciaDoc = doc(collecionProductos, id)
+        getDoc(referenciaDoc)
+            .then(result => {
+                setProducto({
+                    id: result.id,
+                    ...result.data()
+                })
+            })
+            .catch(error => {
+                console.log({error})
+            })
+
     }, [id])
 
 

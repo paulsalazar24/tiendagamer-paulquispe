@@ -35,6 +35,7 @@ export const ItemDetail = ({producto}) => {
         <>
             <div className="tarjeta">
             <div className="contenido">
+
                 <div className="ladoIzq">
                     <h2 className="titulo text-center">{producto.nombre}</h2>
                     <hr></hr>
@@ -42,13 +43,13 @@ export const ItemDetail = ({producto}) => {
                     <p>{producto.description}</p>
                     <ul>
                         <li>Cantidad disponible: {producto.stock}</li>
-                        <li>Precio: {producto.precio}</li>
+                        <li>Precio: s/{producto.precio} </li>
                     </ul>
                 </div>
                 <hr></hr>
                     {
-                         compra ? <button className="btn btn-danger text-dark" onClick={()=> navigate("/carrito")} >Terminar compra</button> :  <ItemCount initial={1} stock={producto.stock} count={count} setCount={setCount} onAdd={onAdd}/>
-
+                         compra ? <div><button className="btn btn-primary text-primary"  onClick={()=> navigate("/")} >Seguir comprando</button> <button className="btn btn-danger text-dark" onClick={()=> navigate("/carrito")} >Ir a carrito</button></div>
+                             :  <ItemCount initial={1} stock={producto.stock} count={count} setCount={setCount} onAdd={onAdd}/>
                      }
             </div>
                     <div className="ladoDer">
