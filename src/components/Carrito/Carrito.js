@@ -46,7 +46,7 @@ export const Carrito = () => {
                             <tr>
                                 <td>Total</td>
                                 <td colSpan="3" className="text-end">s/{precioTotal()}</td>
-                                <td colSpan="4"> <button className="btn btn-primary text-primary">Pagar</button>  </td>
+                                <td colSpan="4"> <button className="btn btn-primary text-primary" onClick={()=> navigate("/checkout")}>Terminar compra</button>  </td>
                             </tr>
 
                             </tbody>

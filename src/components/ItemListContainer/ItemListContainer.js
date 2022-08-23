@@ -3,8 +3,8 @@ import '../../App.css';
 import { ItemList } from '../ItemList/ItemList';
 // import {getProductoCategoria, getProductos} from '../../utils/api';
 import {useParams} from "react-router-dom";
-import {db} from "../../firebase/firebase";
 import { query, where, collection, getDocs } from "firebase/firestore"
+import {db} from "../../firebase/firebase";
 
 const ItemListContainer = ({ saludo }) => {
 
@@ -34,14 +34,6 @@ const ItemListContainer = ({ saludo }) => {
             })
             .catch((error) => console.log(error))
     }, [id]);
-
-    console.log({listaProductos})
-
-
-
-
-
-
 
     console.log({listaProductos})
 

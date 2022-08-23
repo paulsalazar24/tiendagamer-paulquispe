@@ -1,9 +1,18 @@
 import React, {useEffect, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+
+
+
+
+
+
 // import {Navbar, Nav, Container} from 'react-bootstrap';
 import {CartWidget} from '../CartWidget/CartWidget.js';
 import logoTienda from '../../assets/logoGamer.png';
-import {getCategoria} from "../../utils/api";
+//import {getCategoria} from "../../utils/api";
 import {Link} from "react-router-dom";
 import {db} from "../../firebase/firebase";
 import {  collection, getDocs } from "firebase/firestore"
@@ -13,6 +22,7 @@ function NavBar(){
     const [categorias, setCategorias] = useState([]);
 
     useEffect(() => {
+
         const q = collection(db, 'categorias')
         getDocs(q)
             .then(result => {
@@ -27,6 +37,7 @@ function NavBar(){
                 setCategorias(lista)
             })
             .catch((error) => console.log(error))
+
 
     }, []);
 
