@@ -1,10 +1,11 @@
-![Alt Text](https://i.imgur.com/fLHVX1L.gif)
-
-
-
 
 # TIENDA CODE
 ###Poyecto de una tienda de componentes de computadora
+
+
+![Alt Text](https://thumbs.gfycat.com/WindyEnlightenedGreatdane-size_restricted.gif)
+
+
 
 ### Contamos con tres categorias 
 
@@ -13,15 +14,6 @@
 #componentes
 
 
-## - Para correr el proyecto:
-###### npm run start
-
-## - Para correr las apis
-###### npm run startApi
-###### http://localhost:4001/productos
-##### http://localhost:4001/productos?id=${id}
-##### http://localhost:4001/categorias
-##### http://localhost:4001/productos?categoria_id=${id}
 
 
 
